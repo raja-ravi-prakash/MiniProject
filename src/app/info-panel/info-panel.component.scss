@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Fredoka+One&display=swap=");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+.info {
+  .rev-sub {
+    flex-direction: row-reverse;
+  }
+  .tile {
+    background-color: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 40%;
+      border-radius: 0.5rem;
+      &:hover {
+        transition: box-shadow ease 0.2s;
+        box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.336);
+      }
+    }
+
+    .col {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sub {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: 3rem;
+        font-family: "Fredoka One", cursive;
+        cursor: pointer;
+      }
+
+      .main-title {
+        margin: 2rem;
+      }
+
+      .main-p {
+        max-width: 100ch;
+      }
+
+      p {
+        font-family: "Balsamiq Sans", cursive;
+        max-width: 50ch;
+      }
+
+      .predict {
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: "Balsamiq Sans", cursive;
+        background-color: black;
+        border: none;
+        color: white;
+        border: 5px solid #ff5964;
+        outline: 3px solid black;
+        cursor: pointer;
+        &:hover {
+          transition: border ease 0.1s;
+          border: 5px solid black;
+        }
+        &:active {
+          box-shadow: 2px 2px 1rem black;
+        }
+      }
+    }
+  }
+}

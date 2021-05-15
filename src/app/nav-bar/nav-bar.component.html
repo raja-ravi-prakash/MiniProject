@@ -1,0 +1,57 @@
+<div
+  id="ban"
+  class="bar"
+  style="background-image: url('/static/assets/crops.jpg')"
+>
+  <div class="top">
+    <img src="/static/assets/potted-plant.png" alt="LOGO" />
+    <div class="items">
+      <a href="#home" class="in">Home</a>
+      <button href="" (click)="change()" class="in">Predictor</button>
+      <a href="#info" class="in">Info</a>
+      <a href="#about" class="in">About</a>
+    </div>
+  </div>
+  <div class="bottom">
+    <h1>
+      Farming looks mighty easy when your plow is a pencil,<br />
+      and you’re a thousand miles from the corn field
+    </h1>
+  </div>
+</div>
+<div class="c" *ngIf="state">
+  <div class="dialog">
+    <h1>Enter the Inputs</h1>
+    <form [formGroup]="valForm">
+      <input
+        type="number"
+        formControlName="area_code"
+        class="in"
+        placeholder="Enter Area Code"
+      />
+      <input
+        type="number"
+        formControlName="year"
+        class="in"
+        placeholder="Enter Year"
+      />
+      <input
+        type="number"
+        formControlName="item_code"
+        class="in"
+        placeholder="Enter Item Code"
+      />
+      <input
+        type="submit"
+        class="sub"
+        (click)="sub()"
+        [ngStyle]="{
+          'background-color':
+            this.valForm.status == 'VALID' ? '#3d3b8e' : 'grey'
+        }"
+        [disabled]="this.valForm.status != 'VALID'"
+      />
+      <button class="close" (click)="change()">Close</button>
+    </form>
+  </div>
+</div>

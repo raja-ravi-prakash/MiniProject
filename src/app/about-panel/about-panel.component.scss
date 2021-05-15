@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap=");
+@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
+
+.about {
+  padding: 3rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    font-family: "Fredoka One", cursive;
+    width: max-content;
+    font-size: 3rem;
+    margin: 2rem;
+  }
+
+  .team {
+    display: flex;
+    align-items: center;
+    .member {
+      margin: 1rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .image {
+        height: 10rem;
+        width: 10rem;
+        background-color: blue;
+        border-radius: 50%;
+      }
+      .name {
+        margin: 1rem;
+        font-family: "Damion", cursive;
+      }
+    }
+  }
+}
