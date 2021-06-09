@@ -17,7 +17,8 @@
       <span class="role">Backend Designer</span>
     </div>
     <div class="member">
-      <img class="image" src="/static/assets/g.jpeg" />
+      <div class="image"></div>
+      <!-- <img class="image" src="assets/ronin.jpeg" /> -->
       <h2 class="name">Gnana Jeevana</h2>
       <span class="role">Content Creator</span>
     </div>

@@ -29,18 +29,20 @@
         class="in"
         placeholder="Enter Area Code"
       />
+
+      <input
+        type="number"
+        formControlName="item_code"
+        class="in"
+        placeholder="Enter Crop Code"
+      />
       <input
         type="number"
         formControlName="year"
         class="in"
         placeholder="Enter Year"
       />
-      <input
-        type="number"
-        formControlName="item_code"
-        class="in"
-        placeholder="Enter Item Code"
-      />
+
       <input
         type="submit"
         class="sub"
@@ -52,6 +54,11 @@
         [disabled]="this.valForm.status != 'VALID'"
       />
       <button class="close" (click)="change()">Close</button>
+
+      <div>
+        <a target="_blank" href="/areas.html">Area Codes</a>&nbsp;&nbsp;
+        <a target="_blank" href="/crops.html">Crop Codes</a>
+      </div>
     </form>
   </div>
 </div>
